@@ -1,0 +1,28 @@
+{
+  "name": "alfred_deepl_transrator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sugayutokyo/alfred_deepl_transrator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sugayutokyo/alfred_deepl_transrator/issues"
+  },
+  "homepage": "https://github.com/sugayutokyo/alfred_deepl_transrator#readme",
+  "dependencies": {
+    "alfy": "^0.12.2"
+  },
+  "esm": {
+    "await": true
+  },
+  "type": "module"
+}
