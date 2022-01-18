@@ -59,7 +59,7 @@
 				<key>escaping</key>
 				<integer>6</integer>
 				<key>keyword</key>
-				<string>dlj</string>
+				<string>dl</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -71,7 +71,7 @@
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node ENtoJA.js "{query}"</string>
+				<string>./node_modules/.bin/run-node targetToSource.js "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -79,7 +79,7 @@
 				<key>subtext</key>
 				<string>Please add a ; at the end.</string>
 				<key>title</key>
-				<string>EN to JA</string>
+				<string>change to target lang</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -127,7 +127,7 @@
 				<key>escaping</key>
 				<integer>6</integer>
 				<key>keyword</key>
-				<string>dle</string>
+				<string>dlr</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -139,7 +139,7 @@
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node JAtoEN.js "{query}"</string>
+				<string>./node_modules/.bin/run-node sourceToTarget.js "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -147,7 +147,7 @@
 				<key>subtext</key>
 				<string>Please add a ; at the end.</string>
 				<key>title</key>
-				<string>JA to EN</string>
+				<string>change to source lang</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -217,6 +217,10 @@
 	<dict>
 		<key>DEEPL_ACCESS_TOKEN</key>
 		<string></string>
+		<key>SOURCE_LANG</key>
+		<string>JA</string>
+		<key>TARGET_LANG</key>
+		<string>EN</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
