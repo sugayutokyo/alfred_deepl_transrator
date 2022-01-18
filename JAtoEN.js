@@ -1,7 +1,6 @@
 import alfy from 'alfy';
 
 const token = process.env.DEEPL_ACCESS_TOKEN || '';
-alfy.output(token);
 let keyword = alfy.input;
 
 // 最後の文字が;の場合のみ処理を走らせる
