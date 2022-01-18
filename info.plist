@@ -81,7 +81,7 @@
 				<key>title</key>
 				<string>change to target lang</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -149,7 +149,7 @@
 				<key>title</key>
 				<string>change to source lang</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -229,6 +229,6 @@
 	<key>version</key>
 	<string></string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/sugayutokyo/alfred_deepl_transrator</string>
 </dict>
 </plist>
