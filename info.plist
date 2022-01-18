@@ -94,7 +94,7 @@
 				<key>subtext</key>
 				<string>Please add a ; at the end.</string>
 				<key>title</key>
-				<string>change to target lang</string>
+				<string>translate english</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -162,7 +162,7 @@
 				<key>subtext</key>
 				<string>Please add a ; at the end.</string>
 				<key>title</key>
-				<string>change to source lang</string>
+				<string>translate japanese</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -230,7 +230,7 @@
 				<key>subtext</key>
 				<string>Please add a ; at the end.</string>
 				<key>title</key>
-				<string>change to source lang</string>
+				<string>translate Japanese</string>
 				<key>type</key>
 				<integer>5</integer>
 				<key>withspace</key>
@@ -327,7 +327,7 @@
 		<key>7DB91DF3-22ED-441D-A89A-0776563E88BD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>480</integer>
+			<integer>475</integer>
 			<key>ypos</key>
 			<integer>335</integer>
 		</dict>

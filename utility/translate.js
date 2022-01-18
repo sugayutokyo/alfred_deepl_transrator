@@ -21,7 +21,7 @@ export const translate = async (
       if (!largeType) {
         return {
           title: trans.text,
-          subtitle: trans.text,
+          subtitle: 'Copy to Clipboard',
           arg: trans.text,
         };
       } else {
@@ -41,7 +41,7 @@ export const translate = async (
 
         return {
           title: trans.text,
-          subtitle: trans.text,
+          subtitle: 'Open Large Type',
           arg: argLargeType,
         };
       }
