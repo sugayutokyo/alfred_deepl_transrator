@@ -6,6 +6,19 @@
 	<string>com.sugayutokyo.alfred</string>
 	<key>connections</key>
 	<dict>
+		<key>87C38C74-DBAB-415B-8112-B4DE926CF24A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>98C13081-F149-4BB6-9F91-102885E111F4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>98C13081-F149-4BB6-9F91-102885E111F4</key>
 		<array>
 			<dict>
@@ -43,6 +56,39 @@
 	<string>alfred-deepl-translator</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>1</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>argumenttext</key>
+				<string>dl </string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>2</integer>
+				<key>hotmod</key>
+				<integer>393216</integer>
+				<key>hotstring</key>
+				<string>D</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>87C38C74-DBAB-415B-8112-B4DE926CF24A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -187,28 +233,35 @@
 		<key>34CEE1BF-6C32-496C-9454-F3CE5122CF29</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>475</integer>
 			<key>ypos</key>
 			<integer>195</integer>
+		</dict>
+		<key>87C38C74-DBAB-415B-8112-B4DE926CF24A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>50</integer>
 		</dict>
 		<key>98C13081-F149-4BB6-9F91-102885E111F4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>95</integer>
+			<integer>270</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
 		<key>A4D6B631-E131-408F-8376-83C45DFE27B8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>475</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
 		<key>B61780BE-FB7E-4C87-96EC-F4731A58C25E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>95</integer>
+			<integer>270</integer>
 			<key>ypos</key>
 			<integer>195</integer>
 		</dict>
@@ -218,9 +271,9 @@
 		<key>DEEPL_ACCESS_TOKEN</key>
 		<string></string>
 		<key>SOURCE_LANG</key>
-		<string>JA</string>
-		<key>TARGET_LANG</key>
 		<string>EN</string>
+		<key>TARGET_LANG</key>
+		<string>JA</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array>
