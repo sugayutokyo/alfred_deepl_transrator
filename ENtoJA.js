@@ -1,22 +1,16 @@
 import alfy from 'alfy';
+import { deeplTranslate } from './utility/fetchDeeplTranslate.js';
 
-const token = process.env.DEEPL_ACCESS_TOKEN || '';
 let keyword = alfy.input;
 
 // 最後の文字が;の場合のみ処理を走らせる
 if (keyword.slice(-1) === ';') {
   const keywordExceptLastChar = keyword.slice(0, -1);
 
-  const { translations } = await alfy.fetch(
-    `https://api-free.deepl.com/v2/translate`,
-    {
-      query: {
-        auth_key: token,
-        text: keywordExceptLastChar,
-        target_lang: 'JA',
-        source_lang: 'EN',
-      },
-    },
+  const { translations } = await deeplTranslate(
+    'JA',
+    'EN',
+    keywordExceptLastChar,
   );
 
   const items = translations.map(trans => {
@@ -31,7 +25,7 @@ if (keyword.slice(-1) === ';') {
 } else {
   alfy.output([
     {
-      title: 'Enter a colon(;) to start the translation.',
+      title: 'Enter a colon(;) to start the translation.t',
     },
   ]);
 }
