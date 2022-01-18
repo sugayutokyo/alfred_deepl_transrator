@@ -7,18 +7,7 @@
 	<key>connections</key>
 	<dict>
 		<key>87C38C74-DBAB-415B-8112-B4DE926CF24A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>98C13081-F149-4BB6-9F91-102885E111F4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>98C13081-F149-4BB6-9F91-102885E111F4</key>
 		<array>
 			<dict>
@@ -59,39 +48,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>1</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>argumenttext</key>
-				<string>dl </string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>2</integer>
-				<key>hotmod</key>
-				<integer>393216</integer>
-				<key>hotstring</key>
-				<string>D</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>87C38C74-DBAB-415B-8112-B4DE926CF24A</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -105,7 +61,7 @@
 				<key>escaping</key>
 				<integer>6</integer>
 				<key>keyword</key>
-				<string>dl</string>
+				<string>dlr</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -160,6 +116,39 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>1</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>argumenttext</key>
+				<string>dl </string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>2</integer>
+				<key>hotmod</key>
+				<integer>393216</integer>
+				<key>hotstring</key>
+				<string>D</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>87C38C74-DBAB-415B-8112-B4DE926CF24A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -173,7 +162,7 @@
 				<key>escaping</key>
 				<integer>6</integer>
 				<key>keyword</key>
-				<string>dlr</string>
+				<string>dl</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -240,9 +229,9 @@
 		<key>87C38C74-DBAB-415B-8112-B4DE926CF24A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>190</integer>
 		</dict>
 		<key>98C13081-F149-4BB6-9F91-102885E111F4</key>
 		<dict>

@@ -15,7 +15,7 @@ export const translate = async (targetLang, sourceLang, keyword) => {
     const items = translations.map(trans => {
       return {
         title: trans.text,
-        subtitle: 'Copy to Clipboard',
+        subtitle: trans.text,
         arg: trans.text,
       };
     });
