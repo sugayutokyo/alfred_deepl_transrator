@@ -25,10 +25,9 @@ export const translate = async (
           arg: trans.text,
         };
       } else {
-        // let argLargeType = '--input--\n';
-        let argLargeType = '';
-        // argLargeType = argLargeType + keywordExceptLastChar + '\n';
-        // argLargeType = argLargeType + '\n--output--\n';
+        let argLargeType = '--input--\n';
+        argLargeType = argLargeType + keywordExceptLastChar + '\n';
+        argLargeType = argLargeType + '\n--output--\n';
 
         // 出力する文字列を30文字ごとに改行を加える
         let arraySplitSyntax = [...trans.text];
