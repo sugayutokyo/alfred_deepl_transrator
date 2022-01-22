@@ -3,8 +3,7 @@ import { deeplTranslate } from './fetchDeeplTranslate.js';
 export const translate = async (
   targetLang,
   sourceLang,
-  keyword,
-  largeType = false,
+  keyword
 ) => {
   const keywordExceptLastChar = keyword.slice(0, -1);
   console.log('--input--');

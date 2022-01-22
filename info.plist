@@ -178,6 +178,58 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>34CEE1BF-6C32-496C-9454-F3CE5122CF29</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>1</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>argumenttext</key>
+				<string>dl </string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>8</integer>
+				<key>hotmod</key>
+				<integer>393216</integer>
+				<key>hotstring</key>
+				<string>C</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>BE2B68AE-B1CF-48F8-8553-B5F605B00551</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -240,25 +292,6 @@
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>A4D6B631-E131-408F-8376-83C45DFE27B8</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>34CEE1BF-6C32-496C-9454-F3CE5122CF29</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -404,7 +437,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>5D8B3B7E-EC70-4B83-AFFE-EC81E6ECB797</string>
+			<string>B61780BE-FB7E-4C87-96EC-F4731A58C25E</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -453,42 +486,9 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>B61780BE-FB7E-4C87-96EC-F4731A58C25E</string>
+			<string>5D8B3B7E-EC70-4B83-AFFE-EC81E6ECB797</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>1</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>argumenttext</key>
-				<string>dl </string>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>8</integer>
-				<key>hotmod</key>
-				<integer>393216</integer>
-				<key>hotstring</key>
-				<string>C</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>BE2B68AE-B1CF-48F8-8553-B5F605B00551</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -548,7 +548,7 @@
 				<key>escaping</key>
 				<integer>6</integer>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node ./exec/LargeType/sourceToTargetLarge.js "{query}"</string>
+				<string>./node_modules/.bin/run-node targetToSourceLarge.js "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -623,7 +623,7 @@
 				<key>escaping</key>
 				<integer>6</integer>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node ./exec/LargeType/sourceToTargetLarge.js "{query}"</string>
+				<string>./node_modules/.bin/run-node sourceToTargetLarge.js "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -747,31 +747,37 @@
 	<dict>
 		<key>185A1CDC-718C-4017-B925-9DEA6752E5BC</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>535</integer>
+			<integer>415</integer>
 		</dict>
 		<key>3282E4ED-4A72-4FC7-BC41-AD4B72FEB5F8</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>680</integer>
+			<integer>555</integer>
 		</dict>
 		<key>34CEE1BF-6C32-496C-9454-F3CE5122CF29</key>
 		<dict>
 			<key>xpos</key>
 			<integer>60</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>10</integer>
 		</dict>
 		<key>4301F9B7-EDAB-4EB9-AA2A-894405C46595</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
 			<key>xpos</key>
-			<integer>225</integer>
+			<integer>215</integer>
 			<key>ypos</key>
-			<integer>680</integer>
+			<integer>555</integer>
 		</dict>
 		<key>43E3680F-1223-42E2-9302-51BADD254B67</key>
 		<dict>
@@ -783,16 +789,18 @@
 		<key>5D8B3B7E-EC70-4B83-AFFE-EC81E6ECB797</key>
 		<dict>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>355</integer>
 			<key>ypos</key>
-			<integer>140</integer>
+			<integer>145</integer>
 		</dict>
 		<key>6918354A-DAFE-41B4-AC7E-585E0F6B9DF9</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
 			<key>xpos</key>
-			<integer>595</integer>
+			<integer>585</integer>
 			<key>ypos</key>
-			<integer>680</integer>
+			<integer>555</integer>
 		</dict>
 		<key>7DB91DF3-22ED-441D-A89A-0776563E88BD</key>
 		<dict>
@@ -803,80 +811,92 @@
 		</dict>
 		<key>800CB6D0-57C8-4028-8A89-238D2843F12F</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>45</integer>
+			<integer>40</integer>
 			<key>ypos</key>
-			<integer>535</integer>
+			<integer>415</integer>
 		</dict>
 		<key>837FC706-529F-4A51-AD18-80B9E8891658</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
 			<key>xpos</key>
-			<integer>770</integer>
+			<integer>760</integer>
 			<key>ypos</key>
-			<integer>680</integer>
+			<integer>555</integer>
 		</dict>
 		<key>98C13081-F149-4BB6-9F91-102885E111F4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>355</integer>
 			<key>ypos</key>
-			<integer>15</integer>
+			<integer>20</integer>
 		</dict>
 		<key>9A2D1C8C-3CE7-487E-A9C4-52ED604B42B1</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>410</integer>
+			<integer>405</integer>
 			<key>ypos</key>
-			<integer>535</integer>
+			<integer>415</integer>
 		</dict>
 		<key>A4D6B631-E131-408F-8376-83C45DFE27B8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>435</integer>
+			<integer>560</integer>
 			<key>ypos</key>
-			<integer>15</integer>
+			<integer>20</integer>
 		</dict>
 		<key>B3DE2525-E998-47E0-B7CE-CDC02CF68D03</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>215</integer>
 			<key>ypos</key>
-			<integer>535</integer>
+			<integer>415</integer>
 		</dict>
 		<key>B61780BE-FB7E-4C87-96EC-F4731A58C25E</key>
 		<dict>
 			<key>xpos</key>
 			<integer>50</integer>
 			<key>ypos</key>
-			<integer>185</integer>
+			<integer>145</integer>
 		</dict>
 		<key>BE2B68AE-B1CF-48F8-8553-B5F605B00551</key>
 		<dict>
 			<key>xpos</key>
-			<integer>45</integer>
+			<integer>175</integer>
 			<key>ypos</key>
-			<integer>310</integer>
+			<integer>15</integer>
 		</dict>
 		<key>D38C1147-BB0B-4521-8BD8-9960AFAA3BDD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>440</integer>
+			<integer>565</integer>
 			<key>ypos</key>
-			<integer>140</integer>
+			<integer>145</integer>
 		</dict>
 		<key>D715341E-EB0F-4326-B29F-CBC09DB1BE02</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
 			<key>xpos</key>
-			<integer>415</integer>
+			<integer>405</integer>
 			<key>ypos</key>
-			<integer>680</integer>
+			<integer>555</integer>
 		</dict>
 		<key>E3C76DCA-AE69-4C59-A01A-D586E5891A7A</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>765</integer>
+			<integer>760</integer>
 			<key>ypos</key>
-			<integer>535</integer>
+			<integer>415</integer>
 		</dict>
 	</dict>
 	<key>variables</key>

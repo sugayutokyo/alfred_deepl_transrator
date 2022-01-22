@@ -4,8 +4,7 @@ import { deeplTranslate } from './fetchDeeplTranslate.js';
 export const translate = async (
   targetLang,
   sourceLang,
-  keyword,
-  largeType = false,
+  keyword
 ) => {
   // 最後の文字が;の場合のみ処理を走らせる
   if (keyword.slice(-1) === ';') {
@@ -18,13 +17,6 @@ export const translate = async (
     );
 
     const items = translations.map(trans => {
-      if (!largeType) {
-        return {
-          title: trans.text,
-          subtitle: 'Copy to Clipboard',
-          arg: trans.text,
-        };
-      } else {
         let argLargeType = '--input--\n';
         argLargeType = argLargeType + keywordExceptLastChar + '\n';
         argLargeType = argLargeType + '\n--output--\n';
@@ -43,7 +35,6 @@ export const translate = async (
           subtitle: 'Open Large Type',
           arg: argLargeType,
         };
-      }
     });
 
     alfy.output(items);
