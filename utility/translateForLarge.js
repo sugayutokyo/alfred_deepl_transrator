@@ -5,13 +5,12 @@ export const translate = async (
   sourceLang,
   keyword
 ) => {
-  const keywordExceptLastChar = keyword.slice(0, -1);
   console.log('--input--');
-  console.log(keywordExceptLastChar);
+  console.log(keyword);
   const { translations } = await deeplTranslate(
     targetLang,
     sourceLang,
-    keywordExceptLastChar,
+    keyword,
   );
 
   translations.map(trans => {
